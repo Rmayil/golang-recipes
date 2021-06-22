@@ -1,2 +1,2 @@
 # golang-recipes
-Fundamental of Golang
+Fundamentals of Golang
