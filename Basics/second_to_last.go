@@ -12,10 +12,11 @@ func main() {
 
 func safeSecondToLast(nums []int) (i int, err error) {
 	defer func() {
-		if e := recover(); e != nil {
+		if e := recover(); e != nil { // e is interface{}
 			err = fmt.Errorf("%v", e)
 		}
 	}()
+
 	return secondToLast(nums), nil
 }
 

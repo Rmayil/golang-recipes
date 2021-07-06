@@ -7,13 +7,13 @@ import (
 )
 
 func main() {
-	items := []Item {
+	items := []Item{
 		{"m183x", "Magic Wand"},
 		{"m184y", "Invisibility Cape"},
 		{"m185z", "Levitation Spell"},
 	}
 
-	if err := writeItems("items.csv", items); err != nil {
+	if err := writeItems("items1.csv", items); err != nil {
 		log.Fatal(err)
 	}
 }
@@ -25,7 +25,7 @@ type Item struct {
 
 func writeItems(fileName string, items []Item) error {
 	file, err := os.Create(fileName)
-	
+
 	if err != nil {
 		return err
 	}

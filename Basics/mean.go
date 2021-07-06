@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(mean([]int{1, 2, 3}))    // 2
-	fmt.Println(mean([]int{1, 2, 3, 4})) // 2.5 
+	fmt.Println(mean([]int {1, 2, 3}))
+	fmt.Println(mean([]int {1, 2, 3, 4}))
 }
 
 func mean(nums []int) float64 {

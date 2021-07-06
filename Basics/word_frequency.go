@@ -6,7 +6,7 @@ import (
 
 func main() {
 	fmt.Println(frequency(moby))
-	CommaOk()
+	commaOk()
 }
 
 func frequency(words []string) map[string]int {
@@ -17,17 +17,16 @@ func frequency(words []string) map[string]int {
 	return freq
 }
 
-func CommaOk() {
-	prices := map[string]int{
+func commaOk(){
+	prices := map[string]int {
 		"Banana": 0,
 	}
 	price, ok := prices["Banana"]
 	if ok {
 		fmt.Printf("The price of Banana is $%d\n", price)
 	} else {
-		fmt.Printf("We don't have Bananas\n")
+		fmt.Printf("We don't have Bananas \n")
 	}
-
 	price, ok = prices["Apple"]
 	if ok {
 		fmt.Printf("The price of Apple is $%d\n", price)
