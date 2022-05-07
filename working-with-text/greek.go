@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-
+// adding comment
 type Letter struct {
 	Symbol  string
 	English string
